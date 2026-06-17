@@ -9,7 +9,7 @@ body {
 
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+    url("./images/background.jpg");
 
   background-size: cover;
   background-position: center;
@@ -152,4 +152,17 @@ footer p {
   .content-card h2 {
     font-size: 1.7rem;
   }
+}
+.hero-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.profile-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
 }
