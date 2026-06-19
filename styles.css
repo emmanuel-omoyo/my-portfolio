@@ -48,7 +48,7 @@ main {
 /* Glass Cards */
 .content-card {
   width: 90%;
-  max-width: 900px;
+  max-width: 1000px;
 
   background: rgba(255, 255, 255, 0.08);
 
@@ -61,6 +61,8 @@ main {
   padding: 35px;
 
   text-align: center;
+
+  margin: 0 auto;
 }
 
 .content-card h2 {
@@ -71,6 +73,12 @@ main {
 .content-card p {
   line-height: 1.8;
   margin-bottom: 15px;
+}
+
+.content-card:hover {
+  border-color: rgba(0, 191, 255, 0.4);
+
+  transform: translateY(-5px);
 }
 
 /* Skills */
@@ -95,11 +103,14 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  margin-top: 30px;
+  width: 100%;
 }
 
 .project-card {
-  width: 320px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+
   min-height: 300px;
 
   background: rgba(255, 255, 255, 0.06);
@@ -109,6 +120,8 @@ main {
   border-radius: 25px;
 
   padding: 30px;
+
+  text-align: center;
 
   display: flex;
   flex-direction: column;
@@ -123,8 +136,8 @@ main {
 }
 
 .project-card h3 {
-  transform: translateY(-8px);
-  border-color: rgba(0, 191, 255, 0.5);
+  margin-bottom: 15px;
+  font-size: 1.5rem;
 }
 .project-card p {
   line-height: 1.8;
@@ -133,18 +146,24 @@ main {
 /* Buttons */
 .btn {
   display: inline-block;
-  margin-top: 15px;
+
+  padding: 12px 24px;
+
+  border-radius: 30px;
+
   text-decoration: none;
-  background: #00bfff;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 8px;
-  transition: 0.3s;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+
+  background: rgb(69, 167, 233);
+
+  color: #ffffff;
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  background: #0095cc;
+  transform: scale(1.05);
 }
 
 /* Footer */
@@ -197,5 +216,5 @@ footer p {
   height: 220px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid white;
+  border: 2px solid white;
 }
